@@ -1,6 +1,7 @@
 import React from 'react'
 import PostList from './postList'
 import HomeSearch from './search'
+import { useSession, signIn, signOut } from 'next-auth/react'
 
 const Layout = () => {
   return (
@@ -17,6 +18,8 @@ const Layout = () => {
           <div>123</div>
           <div>123</div>
           <div>123</div>
+          <div onClick={() => signIn()}>sign in</div>
+          <div onClick={() => signOut()}>sign out</div>
         </div>
       </div>
     </div>

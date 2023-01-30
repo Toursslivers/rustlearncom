@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Link from 'next/link'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import clsx from 'clsx'
+import { useSession, signIn, signOut } from 'next-auth/react'
 
 const user = {
   name: 'Tom Cook',
@@ -24,9 +25,11 @@ const userNavigation = [
 ]
 
 const Header = () => {
+  const { data: session } = useSession()
+  console.log('session', session)
   // FF8D3A
   return (
-    <Disclosure as="nav" className="bg-gray-800 fixed top-0 right-0 left-0">
+    <Disclosure as="nav" className="fixed top-0 right-0 left-0 bg-gray-800">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
