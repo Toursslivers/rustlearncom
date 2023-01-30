@@ -1,3 +1,5 @@
 import Header from './header'
+import HomeSearch from './search'
+import Layout from './layout'
 
-export { Header }
+export { Header, HomeSearch, Layout }
