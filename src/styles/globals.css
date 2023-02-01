@@ -6,4 +6,16 @@
     body {
         background-color: #f6f7f9;
     }
+
+    input {
+        @apply outline-none;
+    }
+
+    button {}
+}
+
+@layer components {
+    .iconBtn {
+        @apply w-10 h-10 rounded-lg flex items-center justify-center;
+    }
 }

@@ -11,6 +11,7 @@ const Layout = () => {
           <div className="w-full">
             <HomeSearch />
           </div>
+          <div className="h-5 w-full" />
           <PostList />
         </div>
         <div className="relative hidden w-[300px] flex-col space-y-2 md:flex">

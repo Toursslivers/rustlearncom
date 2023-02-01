@@ -1,4 +1,5 @@
 import React from 'react'
+import { BookmarkIcon, EllipsisHorizontalIcon } from '@heroicons/react/24/outline'
 
 const Post = () => {
   return (
@@ -26,7 +27,12 @@ const Post = () => {
           <div className="post-time text-[0.8125rem] leading-[1.125rem]">4分钟阅读时间</div>
         </div>
         <div className="flex items-center">
-          
+          <button className="iconBtn">
+            <BookmarkIcon className="h-6 w-6" />
+          </button>
+          <button className="iconBtn">
+            <EllipsisHorizontalIcon className="h-6 w-6" />
+          </button>
         </div>
       </div>
     </div>
