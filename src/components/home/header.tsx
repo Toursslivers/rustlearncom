@@ -13,8 +13,10 @@ const user = {
 const navigation = [
   { name: '主页', href: '/', current: true },
   { name: '帖子', href: '/posts', current: false },
+  { name: '问题', href: '/questions', current: false },
   { name: '官方新闻', href: '/news', current: false },
   { name: '学习资源', href: '/learn', current: false },
+  { name: '开源项目', href: '/openSourceProject', current: false },
   { name: '工作', href: '/jobs', current: false },
 ]
 
@@ -29,7 +31,7 @@ const Header = () => {
   console.log('session', session)
   // FF8D3A
   return (
-    <Disclosure as="nav" className="fixed top-0 right-0 left-0 bg-gray-800">
+    <Disclosure as="nav" className="fixed top-0 right-0 left-0 z-[100] bg-gray-800">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
